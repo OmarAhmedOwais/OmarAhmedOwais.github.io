@@ -1,0 +1,1 @@
+(()=>{try{const r=document.documentElement,l=localStorage.getItem('omar-language'),t=localStorage.getItem('omar-theme');r.lang=l==='ar'?'ar':'en';r.dir=l==='ar'?'rtl':'ltr';r.dataset.theme=t==='dark'||t==='light'?t:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}catch{}})();
