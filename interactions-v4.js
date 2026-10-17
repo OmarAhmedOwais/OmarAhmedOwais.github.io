@@ -22,7 +22,7 @@
   document.querySelectorAll('[data-preview]').forEach(button => button.addEventListener('click', () => {
     previewTrigger = button;
     const image = document.getElementById('preview-image'); image.src = button.dataset.preview; image.alt = button.dataset.title + ' public website screenshot';
-    document.getElementById('preview-title').textContent = window.portfolioT(button.dataset.title.toLowerCase() + '_name') + window.portfolioT('preview_suffix');
+    document.getElementById('preview-title').textContent = window.portfolioT(button.dataset.title.toLowerCase() + '_name') + ' ' + window.portfolioT('preview_suffix');
     dialog.showModal();
   }));
   document.getElementById('close-preview').addEventListener('click', () => dialog.close());
