@@ -1,0 +1,9 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Ahmed;Omar;;;
+FN:Omar Ahmed
+TITLE:Software Engineer
+EMAIL;TYPE=INTERNET:omar.owais.dev@gmail.com
+URL:https://omarahmedowais.github.io/
+NOTE:Backend and full-stack developer. Node.js / NestJS / TypeScript.
+END:VCARD
