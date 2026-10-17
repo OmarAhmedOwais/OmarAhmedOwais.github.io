@@ -2,3 +2,5 @@
 .technology-groups{grid-template-columns:repeat(2,minmax(0,1fr))}.technology-groups>div{min-width:0}.technology-groups p{font-size:13px;line-height:1.9;overflow-wrap:anywhere}.technology-groups h3{font-size:13px;color:var(--ink)}@media(max-width:520px){.technology-groups{grid-template-columns:1fr;gap:13px}.technology-groups p{font-size:13px;margin-block:5px}}
 
 .scope-result{display:flex;align-items:center;gap:15px;margin:19px 0;padding:14px 16px;background:var(--soft);border:1px solid var(--line);border-radius:12px}.scope-result>strong{font-size:35px;line-height:1;color:var(--accent);flex-shrink:0}.scope-result>div{min-width:0;display:flex;flex-direction:column;gap:5px}.scope-result span{font-size:13px;font-weight:600}.scope-result small{font-size:11px;line-height:1.8;color:var(--muted)}.experience-copy .scope-result{max-width:540px}.scope-result small{overflow-wrap:anywhere}
+
+.experience-products{padding-inline-start:19px;margin:18px 0}.experience-products li{font-size:13px;line-height:1.9;margin-bottom:9px;color:var(--ink)}
