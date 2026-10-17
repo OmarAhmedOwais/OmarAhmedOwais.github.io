@@ -32,5 +32,7 @@ window.PORTFOLIO_TRANSLATIONS = {"work": {"en": "Work", "ar": "المشاريع"
  window.portfolioSetTheme=applyTheme;
  document.getElementById('language-toggle')?.addEventListener('click',()=>applyLanguage(language==='en'?'ar':'en'));
  media.addEventListener('change',()=>{if(theme==='system')applyTheme('system')});
+ window.addEventListener('pageshow',event=>{if(event.persisted){const savedLanguage=stored('omar-language');const savedTheme=stored('omar-theme');applyTheme(['system','light','dark'].includes(savedTheme)?savedTheme:'system');applyLanguage(['en','ar'].includes(savedLanguage)?savedLanguage:'en')}});
+ window.addEventListener('storage',event=>{if(event.key==='omar-language'&&['en','ar'].includes(event.newValue))applyLanguage(event.newValue);if(event.key==='omar-theme'&&['system','light','dark'].includes(event.newValue))applyTheme(event.newValue)});
  applyTheme(theme);applyLanguage(language);
 })();
